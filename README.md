@@ -1,3 +1,3 @@
-# Three-of-a-kind-user-interface
+# WIP Three-of-a-kind-user-interface
 
-Run 'npm start' to run the application.
+Run 'npm start' to start the application with local proxy config.
