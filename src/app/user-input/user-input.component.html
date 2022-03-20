@@ -1,0 +1,4 @@
+<div>
+    <input [formControl]="numberInput">
+    <label *ngIf="numberInput?.errors?.['pattern']">Invalid format.</label>
+</div>

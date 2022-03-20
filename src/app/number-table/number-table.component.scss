@@ -1,0 +1,31 @@
+.number-table {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.number-table__row {
+    display: flex;
+    min-height: 20px;
+    justify-content: space-between;
+    width: 100%;
+    
+    &:first-child {
+        border-bottom: 1px solid #000;
+    }
+    &:last-child {
+        border-top: 1px solid #000;
+    }
+}
+
+.number-table__cell {
+    flex-grow: 1;
+    min-height: 100%;
+    width: 33.3%;
+    text-align: center;
+    &:first-child {
+        border-right: 1px solid #000;
+    }
+    &:last-child {
+        border-left: 1px solid #000;;
+    }
+}
