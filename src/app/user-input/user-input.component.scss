@@ -1,0 +1,33 @@
+.wrapper {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    label {
+        display: block;
+        margin-bottom: 2px;
+    }
+    input {
+        background: #fff;
+        border: 1px solid #999;
+        float: left;
+        height: 33px;
+        margin: 0;
+        padding: 0 0 0 15px;
+        width: 120px;
+    }
+}
+
+.error {
+    input {
+        background-color: #fce4e4;
+        border: 1px solid #cc0033;
+        outline: none;
+    }
+    label {
+        color: #cc0033;
+        margin: 5px 0 0;
+    }
+}

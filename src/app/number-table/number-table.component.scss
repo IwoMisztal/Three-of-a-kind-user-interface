@@ -1,6 +1,5 @@
 .number-table {
     width: 300px;
-    margin: 0 auto;
 }
 
 .number-table__row {
@@ -8,7 +7,6 @@
     min-height: 20px;
     justify-content: space-between;
     width: 100%;
-    
     &:first-child {
         border-bottom: 1px solid #000;
     }
