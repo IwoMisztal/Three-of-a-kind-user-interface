@@ -2,8 +2,8 @@
     <ng-container *ngFor="let number of numbers; let i = index" >
         <div *ngIf="i % itemsPerRow === 0" class="number-table__row">
             <div class="number-table__cell" *ngFor="let cellIndex of itemsPerRow | range;">
-                <span *ngIf="(numbersTableService.processedNumbers | async)?.includes(numbers[i + cellIndex])">
-                    {{numbers[i + cellIndex]}}
+                <span *ngIf="(threeOfKindService.processedNumbers | async)?.includes(numbers[i + cellIndex])">
+                    {{ numbers[i + cellIndex] }}
                 </span>
             </div>
         </div>

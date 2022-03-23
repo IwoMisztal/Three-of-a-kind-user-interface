@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 import { catchError, of } from 'rxjs';
-import { NumberTableService } from 'src/shared/services/number-table.service';
-import { numberArrayFormatValidator } from './ArrayOfNumbersValidator';
+import { ThreeOfKindService } from 'src/shared/services/three-of-kind.service';
 
 @Component({
   selector: 'app-user-input',
@@ -15,13 +14,13 @@ export class UserInputComponent implements OnInit {
 
   numberInput = new FormControl(null, Validators.pattern(this.arrayOfNumbersRegex));
 
-  constructor(private numberTableService: NumberTableService) { }
+  constructor(private threeOfKindService: ThreeOfKindService) { }
 
   ngOnInit(): void {
   }
 
   processInput() {
-    this.numberTableService.processNumbers(this.numberInput.value.split(',')).pipe(
+    this.threeOfKindService.processNumbers(this.numberInput.value.split(',')).pipe(
       catchError(err => of(this.numberInput.setErrors({'format': err.error}))),
     ).subscribe()
   }

@@ -6,13 +6,13 @@ import { SharedModule } from 'src/shared/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NumberTableComponent } from './number-table/number-table.component';
+import { GridComponent } from './grid/grid.component';
 import { UserInputComponent } from './user-input/user-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NumberTableComponent,
+    GridComponent,
     UserInputComponent,
   ],
   imports: [

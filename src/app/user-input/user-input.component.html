@@ -1,8 +1,7 @@
 <div class="wrapper" [class.error]="numberInput?.errors?.['format']" >
     <div class="control">
-        <label>Number array in format '[x,y,z]'</label>
-        <input [formControl]="numberInput">
+        <input [formControl]="numberInput" placeholder="X,Y,Z">
         <label class="error" *ngIf="numberInput?.errors?.['format']">{{numberInput?.errors?.['format']}}</label>
     </div>
-    <button (click)="processInput()">SEND</button>
+    <button class="submit" (click)="processInput()">SUBMIT</button>
 </div>
